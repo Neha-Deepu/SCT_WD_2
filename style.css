@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #f0f0f0;
+}
+
+.stopwatch-container {
+    text-align: center;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.display {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.buttons button {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.buttons button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+#startPauseBtn {
+    background: #4CAF50;
+    color: #fff;
+}
+
+#startPauseBtn:hover {
+    background: #45a049;
+}
+
+#resetBtn {
+    background: #f44336;
+    color: #fff;
+}
+
+#resetBtn:hover {
+    background: #e53935;
+}
+
+#lapBtn {
+    background: #2196F3;
+    color: #fff;
+}
+
+#lapBtn:hover {
+    background: #1e88e5;
+}
+
+.laps {
+    margin-top: 1rem;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.lap {
+    font-size: 1rem;
+    background: #eee;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
